@@ -3,11 +3,11 @@ from fastapi.exceptions import HTTPException
 from fastapi.params import Depends
 from sqlalchemy.orm.session import Session
 from starlette.responses import Response
-from ..database import SessionLocal
-from .. import schemas,database,models,oauth2
+from blog.database import SessionLocal
+from blog import schemas,database,models,oauth2
 from typing import List
-from .. import models
-from ..repository import blog
+from blog import models
+from blog.repository import blog
 
 router = APIRouter(prefix='/blog',tags=['blogs']) 
 

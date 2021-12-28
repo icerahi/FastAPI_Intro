@@ -2,7 +2,7 @@
 from fastapi.exceptions import HTTPException
 from fastapi.params import Depends
 from sqlalchemy.orm.session import Session
-from .. import models,schemas
+from blog import models,schemas
 
 def get_all(db:Session):
     blogs = db.query(models.Blog).all()

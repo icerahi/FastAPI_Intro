@@ -1,0 +1,1 @@
+{"id":"95b5e1fc-471f-4c16-bda9-e2c0856cd034","space":14858,"runtime":"python3.9","name":"app","path":"mdgpe6","project":"c0ut7udh","account":"144798365827","region":"ap-southeast-1","deps":["fastapi","uvicorn","sqlalchemy","passlib[bcrypt]","python-jose","python-multipart"],"envs":null,"public":true,"log_level":"debug","cron":""}

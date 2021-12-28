@@ -3,9 +3,10 @@ from fastapi.exceptions import HTTPException
 from fastapi.params import Depends
 from sqlalchemy.orm.session import Session
 
-from ..hashing import Hash
-from .. import database,models,schemas
-from ..repository import user
+from blog.hashing import Hash
+from blog import database,models,schemas
+from blog.repository import user
+
 router=APIRouter(prefix='/user',tags=['users'])
 get_db = database.get_db
 

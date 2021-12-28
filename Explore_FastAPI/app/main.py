@@ -1,13 +1,13 @@
 from typing import List
 from fastapi import FastAPI,Depends,HTTPException,Response
 
-from .hashing import Hash
-from .schemas import Blog,ShowBlog, ShowUser, User
-from . import models
-from .database import engine,SessionLocal
+from blog.hashing import Hash
+from blog.schemas import Blog,ShowBlog, ShowUser, User
+from blog import models
+from blog.database import engine,SessionLocal
 from sqlalchemy.orm import Session
-from . import database
-from .routers import blog,user,authentication
+from blog import database
+from blog.routers import blog,user,authentication
 
 models.Base.metadata.create_all(engine)
 

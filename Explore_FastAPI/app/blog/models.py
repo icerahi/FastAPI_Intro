@@ -1,6 +1,6 @@
 from sqlalchemy.orm import relationship
 from sqlalchemy.sql.schema import ForeignKey
-from .database import Base
+from blog.database import Base
 from sqlalchemy import Column,Integer,String
 
 class Blog(Base):

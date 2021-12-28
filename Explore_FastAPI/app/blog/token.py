@@ -1,7 +1,7 @@
 from typing import Optional
 from pydantic import BaseModel
 from datetime import timedelta,datetime
-from . import schemas
+from blog import schemas
 
 from jose import jwt,JWTError
 
